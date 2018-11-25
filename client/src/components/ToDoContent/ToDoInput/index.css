@@ -1,0 +1,39 @@
+.ToDoInput{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px 50px;
+    border: 1px solid #aeacac;
+    justify-content:space-between;
+    box-shadow: 10px 5px 5px #aeacae;
+}
+
+input {
+    height: 30px;
+}
+.inputToDo {
+    width: 40%;
+    text-indent: 5px;
+    opacity: 0.5;
+}
+
+.pickDate {
+    width: 50%;
+}
+
+.selectPr {
+    width: 35%;
+}
+
+.bt{
+    height: 30px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #55baf0;
+}
+
+.bt:hover{
+    background-color: #0b85c7;
+}
