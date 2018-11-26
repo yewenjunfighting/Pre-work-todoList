@@ -6,13 +6,16 @@
 > 4. 编辑一个待办事项的具体内容
 > 5. 待办事项可以设置优先级
 > 6. 待办事项可以设置expire date
-> 7. 支持按照不同的方式排序，如优先级，expire date
 
-## install
-> git clone git@github.com:yewenjunfighting/Pre-work-todoList.git
 
 ## run
-
+ ### rearEnd
+ > cd rearEnd
+ > python manage.py runserver 0.0.0.0:8000
+ ### client
+ > cd lient
+ > npm install
+ > npm start
 ## gif演示
 ### 增加一个待办事项
 ![image](https://github.com/yewenjunfighting/Pre-work-todoList/blob/master/screenShots/addItem.gif)
