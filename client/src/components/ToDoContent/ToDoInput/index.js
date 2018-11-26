@@ -6,10 +6,10 @@ import "react-datepicker/dist/react-datepicker.css";
 import './index.css';
 
 const priority = [ // 设置优先级选项, value越大优先级越高
-    { value: 4, label: 'urgent and important' },
-    { value: 3, label: 'urgent but not important' },
-    { value: 2, label: 'not urgent but important' },
-    { value: 1, label: 'not important and not urgent'}
+    { value: 4, label: '紧急且重要' },
+    { value: 3, label: '紧急但不重要' },
+    { value: 2, label: '不紧急但重要' },
+    { value: 1, label: '不重要不紧急'}
 ];
 
 class ToDoInput extends React.Component {
@@ -17,15 +17,19 @@ class ToDoInput extends React.Component {
         super(props);
         this.state = {
             expireDate: new Date(), // 初始化截止时间
-            selectedPriority:   { value: 1, label: 'not important and not urgent'}, //初始的优先级
+            selectedPriority:   { value: 4, label: '紧急且重要'}, //初始的优先级
             isAdd: false
         };
     }
 
     componentWillReceiveProps(nextProps) {
         if(nextProps.editContent) {
-            console.log('next', nextProps.editContent.fields.todo);
+            console.log('next', nextProps.editContent.fields);
             this.toDoInput.value = nextProps.editContent.fields.todo;
+            this.setState({
+                expireDate: new Date(nextProps.editContent.fields.expireDate),
+                selectedPriority: nextProps.editContent.fields.priority
+            })
         }
     }
 
@@ -52,6 +56,8 @@ class ToDoInput extends React.Component {
     }
 
     render() {
+        console.log('渲染');
+        console.log(this.props.isEdit);
         const { selectedPriority } = this.state;
         return (
           <div className="ToDoInput">
@@ -64,13 +70,13 @@ class ToDoInput extends React.Component {
               />
               <DatePicker
                 className="pickDate"
-                selected={ this.props.isEdit === 1 ?  new Date(this.props.editContent.fields.expireDate) : this.state.expireDate }
+                selected={ this.state.expireDate }
                 onChange={ this.setExpireDate.bind(this) }
                 dropdownMode="scroll"
               />
               <Select
                 className="selectPr"
-                value={ this.props.isEdit === 1 ? this.props.editContent.fields.priority : selectedPriority }
+                value={ selectedPriority }
                 onChange={ this.setPriority.bind(this) }
                 options={priority}
               />

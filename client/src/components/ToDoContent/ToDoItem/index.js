@@ -66,10 +66,10 @@ class ToDoItem extends React.Component {
                    <div className="toDo-header">
                        <h5>wait to do</h5>
                        <div className="sort-svg" onClick={this.sortItems.bind(this)}>
-                           <span className="dateUp" title="date asc"></span>
-                           <span className="priUp" title="pri asc"></span>
-                           <span className="dateDown" title="date desc"></span>
-                           <span className="priDown" title="pri desc"></span>
+                           <span className="dateUp" title="按截止时间升序排列"></span>
+                           <span className="priUp" title="按优先级升序排列"></span>
+                           <span className="dateDown" title="按截止时间降序排列"></span>
+                           <span className="priDown" title="按优先级降序排列"></span>
                        </div>
                    </div>
                     {todo.map(function(item, index) {

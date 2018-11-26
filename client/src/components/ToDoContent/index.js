@@ -50,9 +50,9 @@ class ToDoContent extends Component {
     }
 
     deleteItem(only) {
-        this.setState({ // 使得用户编辑
-            isEdit: 0
-        });
+        // this.setState({ // 使得用户编辑
+        //     isEdit: 0
+        // });
         const nowItems = this.state.items;
         let st = this.findPos(this.state.items, only);
         console.log('st: ', typeof st);
@@ -95,16 +95,16 @@ class ToDoContent extends Component {
         let editContent = this.state.items[pos];
         switch(editContent.fields.priority){
             case 1:
-                editContent.fields.priority = { value: 1, label: 'not important and not urgent'};
+                editContent.fields.priority = { value: 1, label: '不紧急不重要'};
                 break;
             case 2:
-                editContent.fields.priority = { value: 2, label: 'not urgent but important' };
+                editContent.fields.priority = { value: 2, label: '不紧急但重要' };
                 break;
             case 3:
-                editContent.fields.priority = { value: 3, label: 'urgent but not important' };
+                editContent.fields.priority = { value: 3, label: '紧急但不重要' };
                 break;
             case 4:
-                editContent.fields.priority = { value: 4, label: 'urgent and important' }
+                editContent.fields.priority = { value: 4, label: '紧急且重要' }
                 break;
             default:
                 break;
