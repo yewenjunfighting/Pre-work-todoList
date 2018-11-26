@@ -48,8 +48,7 @@ class ToDoInput extends React.Component {
         this.toDoInput.value = '';
         this.setState({
             isAdd: true,
-        })
-        console.log('save');
+        });
     }
 
     render() {
@@ -84,4 +83,4 @@ class ToDoInput extends React.Component {
     }
 }
 
-export default ToDoInput
+export default ToDoInput;

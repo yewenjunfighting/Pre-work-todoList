@@ -11,7 +11,6 @@ class ToDoItem extends React.Component {
         }
     }
     sortItems(event) {
-        console.log(event.target.className)
         this.setState({
             sortComment: 1
         });
@@ -103,4 +102,4 @@ class ToDoItem extends React.Component {
     }
 }
 
-export default ToDoItem
+export default ToDoItem;

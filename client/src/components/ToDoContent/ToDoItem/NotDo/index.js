@@ -13,18 +13,17 @@ class NotDo extends React.Component {
     }
 
     changeItem(event) {
-        console.log(event.target.className)
         if (event.target.className === 'change-del')
-            this.props.deleteItem(this.props.item.fields.only) // 把唯一标识传出去
+            this.props.deleteItem(this.props.item.fields.only); // 把唯一标识传出去
         else if(event.target.className === 'change-done')
-            this.props.doneItem(this.props.item.fields.only)
+            this.props.doneItem(this.props.item.fields.only);
         else if(event.target.className === 'change-edit')
-            this.props.editItem(this.props.item.fields.only)
+            this.props.editItem(this.props.item.fields.only);
     }
     render() { // 数据要从父级获取
-        let starNum = [1, 2, 3, 4]
-        starNum = starNum.splice(0,this.props.item.fields.priority)
-        console.log(this.props.item)
+        let starNum = [1, 2, 3, 4];
+        starNum = starNum.splice(0,this.props.item.fields.priority);
+        console.log(this.props.item);
         return (
             <div className="NotDo">
                 <div className="NotDo-thing">
@@ -54,4 +53,4 @@ class NotDo extends React.Component {
     }
 }
 
-export default NotDo
+export default NotDo;

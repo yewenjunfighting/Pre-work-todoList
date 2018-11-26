@@ -32,7 +32,7 @@ class ToDoContent extends Component {
         this.setState({
             isEdit: 0,
             editContent: null
-        })
+        });
         let priority = pri.value;
         const only = new Date().getTime().toString(); // 生成时间戳，作为唯一标识
         if(!checkInputData(todo)) return; // 如果输入为空就给出提醒
@@ -45,14 +45,14 @@ class ToDoContent extends Component {
 
     findPos(items, only) { // 定位
         for( let index in items) {
-            if(items[index].fields.only === only) return index
+            if(items[ index ].fields.only === only) return index
         }
     }
 
     deleteItem(only) {
         this.setState({ // 使得用户编辑
             isEdit: 0
-        })
+        });
         const nowItems = this.state.items;
         let st = this.findPos(this.state.items, only);
         console.log('st: ', typeof st);
@@ -112,9 +112,8 @@ class ToDoContent extends Component {
         this.setState({
             isEdit: 1,
             editContent: editContent
-        })
+        });
         this.deleteItem(only)
-        console.log(this.state.items[pos])
     }
     render() {
         const items = this.state.items;

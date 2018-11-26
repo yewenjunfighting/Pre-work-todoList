@@ -4,24 +4,22 @@ import { change } from "../../../../utils/change";
 import './index.css'
 class Done extends React.Component{
 
-    changeSvg(event) { // 利用事件委托来更换svg图片
+   changeSvg(event) { // 利用事件委托来更换svg图片
         change(event)
     }
 
-    originSvg(event) {
+   originSvg(event) {
         change(event)
     }
 
     changeItem(event) {
-        console.log(event.target.className)
         if (event.target.className === 'change-del')
             this.props.deleteItem(this.props.item.fields.only) // 把唯一标识传出去
     }
 
     render() {
-        let starNum = [1, 2, 3, 4]
-        starNum = starNum.splice(0,this.props.item.fields.priority)
-        console.log(this.props.item, starNum)
+        let starNum = [1, 2, 3, 4];
+        starNum = starNum.splice(0,this.props.item.fields.priority);
         return (
             <div className="have-done">
                 <div className="done-thing">
@@ -49,4 +47,4 @@ class Done extends React.Component{
     }
 }
 
-export default Done
+export default Done;

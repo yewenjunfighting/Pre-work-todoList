@@ -23,17 +23,11 @@ def index(request):
 
 def add(request):
     if request.method == 'POST':
-        print(request.body)
-        print request.POST
         todo = request.POST['todo'].strip()
         isDone = request.POST['isDone']
         expireDate = request.POST['expireDate']
         priority = request.POST['priority']
         only = request.POST['only']
-        print(todo)
-        print(priority)
-        print(expireDate)
-        print(isDone)
         newItem = models.ToDoItems(todo=todo, isDone=isDone, expireDate=expireDate, priority=priority, only=only)
         newItem.save()
         return sendRes("add date", 200)
@@ -43,7 +37,6 @@ def add(request):
 
 def delete(request):
     if request.method == 'DELETE':
-        print request.body
         body_unicode = request.body.decode('utf-8')
         body = json.loads(body_unicode)
         only = body['only']
@@ -55,7 +48,6 @@ def delete(request):
 
 def complete(request):
     if request.method == 'PATCH':
-        print request.body
         body_unicode = request.body.decode('utf-8')
         body = json.loads(body_unicode)
         only = body['only']

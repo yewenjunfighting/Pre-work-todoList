@@ -1,6 +1,5 @@
 from .models import ToDoItems
 from django.core import serializers
-from django.contrib.auth.models import User
 from django.http import HttpResponse, HttpResponseRedirect
 
 

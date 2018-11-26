@@ -9,15 +9,6 @@ const request = axios.create({
 request.defaults.withCredentials = true;
 request.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded';
 
-// request.interceptors.response.use(
-//     (res) => {
-//         return res
-//     },
-//     (err) => {
-//         return Promise.reject(err)
-//     }
-// )
-
 // 获取全部的item
 function getAllItems() {
     return request({
