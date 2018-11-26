@@ -42,6 +42,7 @@
 }
 
 .change-done:after {
+    cursor: pointer;
     content: url('../../../../assets/hoverDone.svg')
 }
 
