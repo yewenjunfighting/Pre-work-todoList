@@ -1,3 +1,10 @@
+<p>
+<a href="https://www.python.org/downloads/release/python-2715/"><img src="https://img.shields.io/badge/python-2.7.15-blue.svg"></a>
+<a href="https://docs.djangoproject.com/en/2.1/releases/1.8.19/"><img src="https://img.shields.io/badge/django-1.8.19-blue.svg"></a>
+<a href="https://www.django-rest-framework.org/"><img src="https://img.shields.io/badge/DRF-3.5.4-blue.svg"></a>
+</p>
+
+
 # Pre-work-todoList
 ## 实现的功能
 > 1. 增加一个待办事项
