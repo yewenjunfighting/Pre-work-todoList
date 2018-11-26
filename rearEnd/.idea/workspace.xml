@@ -13,14 +13,7 @@
       <change beforePath="$PROJECT_DIR$/../../drop-downListComponent/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../drop-downListComponent/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../drop-downListComponent/public/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../screenShots/addItem.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../screenShots/deleteItem.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../screenShots/editItem.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../screenShots/setExpireDate.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../screenShots/setPriority.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../screenShots/sortWithDate.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../screenShots/sortWithPri.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../wp-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../wp-test/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../wp-test/config/webpack.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../wp-test/config/webpack.dev.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../wp-test/dist/images/link-23d20234.jpg" beforeDir="false" />
@@ -235,7 +228,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="1" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35897437" />
