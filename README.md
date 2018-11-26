@@ -28,5 +28,5 @@
 ![image](https://github.com/yewenjunfighting/Pre-work-todoList/blob/master/screenShots/setexpire.gif)
 ### 按优先级排序
 ![image](https://github.com/yewenjunfighting/Pre-work-todoList/blob/master/screenShots/sortPri.gif)
-### 按优先级排序
+### 按截至时间排序
 ![image](https://github.com/yewenjunfighting/Pre-work-todoList/blob/master/screenShots/sortDate.gif)
