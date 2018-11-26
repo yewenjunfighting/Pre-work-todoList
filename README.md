@@ -15,7 +15,7 @@
 
 ## gif演示
 ### 增加一个待办事项
-
+![image](https://github.com/yewenjunfighting/Pre-work-todoList/blob/master/screenShots/addItem.gif)
 ### 删除一个待办事项
 ![image](https://github.com/yewenjunfighting/Pre-work-todoList/blob/master/GIFName.gif )
 ### 标记一个待办事项为已完成
