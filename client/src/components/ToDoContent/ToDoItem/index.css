@@ -15,12 +15,11 @@
 }
 
 .sort-svg{
-    width: 30%;
+    width: 15%;
     margin: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
 }
 
 .sort-svg span:hover {

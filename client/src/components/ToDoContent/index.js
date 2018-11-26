@@ -29,6 +29,10 @@ class ToDoContent extends Component {
     }
 
     addToDoItem(todo, isDone, expireDate, pri) {
+        this.setState({
+            isEdit: 0,
+            editContent: null
+        })
         let priority = pri.value;
         const only = new Date().getTime().toString(); // 生成时间戳，作为唯一标识
         if(!checkInputData(todo)) return; // 如果输入为空就给出提醒

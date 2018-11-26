@@ -14,15 +14,19 @@ class ToDoItem extends React.Component {
         console.log(event.target.className)
         this.setState({
             sortComment: 1
-        })
+        });
         if(event.target.className === 'dateUp') {
-            this.props.items.sort((x, y) => x.fields.expireDate.split('/').reverse().join('') - y.fields.expireDate.split('/').reverse().join(''));
+            this.props.items.sort((x, y) => {
+               return new Date(y.fields.expireDate).getTime() - new Date(x.fields.expireDate).getTime();
+            });
         }else if(event.target.className === 'priUp'){
-            this.props.items.sort((x, y) => x.fields.priority - y.fields.priority);
-        }else if(event.target.className === 'dateDown') {
-            this.props.items.sort((x, y) => y.fields.expireDate.split('/').reverse().join('') - x.fields.expireDate.split('/').reverse().join(''));
-        }else if(event.target.className === 'priDown'){
             this.props.items.sort((x, y) => y.fields.priority - x.fields.priority);
+        }else if(event.target.className === 'dateDown') {
+            this.props.items.sort((x, y) => {
+                return new Date(x.fields.expireDate).getTime() - new Date(y.fields.expireDate).getTime();
+            });
+        }else if(event.target.className === 'priDown'){
+            this.props.items.sort((x, y) => x.fields.priority - y.fields.priority);
         }
         console.log(this.props.items)
     }

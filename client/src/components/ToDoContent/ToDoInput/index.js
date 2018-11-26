@@ -18,11 +18,13 @@ class ToDoInput extends React.Component {
         this.state = {
             expireDate: new Date(), // 初始化截止时间
             selectedPriority:   { value: 1, label: 'not important and not urgent'}, //初始的优先级
+            isAdd: false
         };
     }
 
     componentWillReceiveProps(nextProps) {
         if(nextProps.editContent) {
+            console.log('next', nextProps.editContent.fields.todo);
             this.toDoInput.value = nextProps.editContent.fields.todo;
         }
     }
@@ -44,10 +46,10 @@ class ToDoInput extends React.Component {
         let pri = this.state.selectedPriority === null ? {value: 0, label: ''} : this.state.selectedPriority;  // 处理用户没有选择优先级的情况
         this.props.addToDoItem(this.toDoInput.value, 0, deadLine, pri); // 把todo事项, 是否完成, 截止日期, 优先级传给父级组件
         this.toDoInput.value = '';
-           this.setState({
-               isAdd: true,
-               btText: 'Add Task'
-           })
+        this.setState({
+            isAdd: true,
+        })
+        console.log('save');
     }
 
     render() {
