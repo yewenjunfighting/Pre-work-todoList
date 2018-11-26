@@ -13,13 +13,14 @@
       <change beforePath="$PROJECT_DIR$/../../drop-downListComponent/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../drop-downListComponent/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../drop-downListComponent/public/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/ToDoContent/ToDoInput/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/ToDoContent/ToDoInput/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/ToDoContent/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/ToDoContent/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/ToDoTitle/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/ToDoTitle/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../screenShots/addItem.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../screenShots/deleteItem.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../screenShots/editItem.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../screenShots/setExpireDate.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../screenShots/setPriority.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../screenShots/sortWithDate.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../screenShots/sortWithPri.gif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../wp-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../wp-test/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../wp-test/config/webpack.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../wp-test/config/webpack.dev.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../wp-test/dist/images/link-23d20234.jpg" beforeDir="false" />
@@ -173,7 +174,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
