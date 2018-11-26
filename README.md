@@ -9,7 +9,7 @@
 > 7. 支持按照不同的方式排序，如优先级，expire date
 
 ## install
-> git clone 
+> git clone git@github.com:yewenjunfighting/Pre-work-todoList.git
 
 ## run
 
