@@ -1,0 +1,48 @@
+.have-done {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.done-thing {
+    width: 45%;
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.svg-set {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.done-date-pri {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.change-del:after {
+    cursor: pointer;
+    content: url('../../../../assets/hoverDelete.svg')
+}
+
+.change-done:after {
+    content: url('../../../../assets/hoverDone.svg')
+}
+
+.star span:after {
+    content: url('../../../../assets/star.svg')
+}
+
+.star {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
