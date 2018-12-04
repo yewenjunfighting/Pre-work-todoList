@@ -17,10 +17,10 @@
 
 ## run
  ### rearEnd
- > 1.    cd rearEnd
+ > 1.    cd backend
  > 2.    python manage.py runserver 0.0.0.0:8000
  ### client
- > cd lient
+ > cd frontend
  > 1.    npm install
  > 2.    npm start
 ## gif演示
