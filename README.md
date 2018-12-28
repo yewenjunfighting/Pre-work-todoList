@@ -23,7 +23,7 @@
  > cd frontend
  > 1.    npm install
  > 2.    npm start
-## gif演示
+## GIF演示
 ### 增加一个待办事项
 ![image](https://github.com/yewenjunfighting/Pre-work-todoList/blob/master/screenShots/addItem.gif)
 ### 删除一个待办事项
