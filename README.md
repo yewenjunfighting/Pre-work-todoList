@@ -16,7 +16,7 @@
 
 
 ## run
- ### rearEnd
+ ### backEnd
  > 1.    cd backend
  > 2.    python manage.py runserver 0.0.0.0:8000
  ### client
